@@ -1,240 +1,137 @@
 import React from 'react';
 import './App.css';
-import profileImg from './profile.jpg';
-
-const projects = [
-  {
-    title: 'ADAS and Pothole Detection',
-    role: 'Backend Developer',
-    period: '2025–Present',
-    description: 'Real-time, camera-based pothole and terrain monitoring using AI and computer vision (YOLOv8, CNNs).',
-  },
-  {
-    title: 'LLM Corrector',
-    role: 'Frontend Developer',
-    period: '2025–2029',
-    description: 'AI-powered solution for analyzing and correcting question papers using LLMs.',
-  },
-  {
-    title: 'ARTS – Aegis Rail Track Security',
-    role: 'Backend Developer',
-    period: '2024–2025',
-    description: 'Object detection to prevent track accidents, sending alerts to security.',
-  },
-];
-
-const skills = [
-  'Project Management', 'Public Relations', 'Teamwork', 'Time Management',
-  'Leadership', 'Effective Communication', 'Critical Thinking', 'Motivational Speaker',
-];
-
-const techSkills = [
-  'Python', 'JavaScript', 'HTML', 'CSS', 'Flask', 'Git', 'Prophet', 'Scikit-learn', 'Jupyter Notebook',
-  'Clustering', 'Recommendation Systems', 'Forecasting', 'Anomaly Detection',
-];
-
-const certifications = [
-  {
-    title: 'Applied Artificial Intelligence: Practical Implementations',
-    description: 'Hands-on experience with real-world AI applications and deployment strategies.',
-    link: '',
-  },
-  {
-    title: 'Introduction to Pandas',
-    description: 'Fundamentals of data manipulation and analysis using the Pandas library in Python.',
-    link: '',
-  },
-  {
-    title: 'Introduction to Python',
-    description: 'Core programming concepts and syntax in Python for beginners.',
-    link: '',
-  },
-  {
-    title: 'Introduction to Machine Learning',
-    description: 'Overview of machine learning algorithms and their practical applications.',
-    link: '',
-  },
-  {
-    title: 'Introduction to NumPy',
-    description: 'Numerical computing and array operations using NumPy in Python.',
-    link: '',
-  },
-  {
-    title: 'Introduction to OpenCV',
-    description: 'Basics of computer vision and image processing with OpenCV.',
-    link: '',
-  },
-  {
-    title: 'Introduction to SQL',
-    description: 'Essentials of database querying and management using SQL.',
-    link: '',
-  },
-  {
-    title: 'Introduction to Matplotlib',
-    description: 'Data visualization techniques using Matplotlib in Python.',
-    link: '',
-  },
-  {
-    title: 'Java',
-    description: 'Comprehensive understanding of Java programming language and OOP concepts.',
-    link: '',
-  },
-  {
-    title: 'Introduction to Spark',
-    description: 'Big data processing and analytics using Apache Spark.',
-    link: '',
-  },
-  {
-    title: 'Web Development with HTML, CSS & JavaScript',
-    description: 'Building responsive and interactive web pages using core web technologies.',
-    link: '',
-  },
-  {
-    title: 'Python (INGOSYS PART-1)',
-    description: 'Foundational Python programming skills, INGOSYS curriculum.',
-    link: '',
-  },
-  {
-    title: 'Python (INFOSYS FOUNDATION CERTIFICATION FINAL)',
-    description: 'Completion of Infosys Foundation’s final Python certification.',
-    link: '',
-  },
-  {
-    title: 'Python (INFOSYS BASICS)',
-    description: 'Basic Python programming concepts, Infosys certification.',
-    link: '',
-  },
-  {
-    title: 'Python (INFOSYS PART-2)',
-    description: 'Advanced Python programming, Infosys curriculum.',
-    link: '',
-  },
-  {
-    title: 'Daily Quiz of Engineering: April Series (Unstop)',
-    description: 'Consistent participation and achievement in daily engineering quizzes.',
-    link: '',
-  },
-];
-
-const education = [
-  {
-    school: 'K S School of Engineering and Management',
-    degree: 'B.E. in Artificial Intelligence and Data Science',
-    period: '2022–2026',
-  },
-  {
-    school: 'Sri Krishna PU College',
-    degree: 'PCMC’s',
-    period: '2020–2022',
-    details: '73%'
-  },
-];
-
-const languages = [
-  'English (Fluent)', 'Kannada (Fluent)', 'Telugu (Fluent)', 'Hindi (Intermediate)', 'Tamil (Intermediate)'
-];
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-
   return (
-    <div className={darkMode ? 'App dark' : 'App'}>
-      <nav className="navbar">
-        <div className="nav-title">K SURYA PRAKASH</div>
-        <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+    <div className="resume-container resume-dark">
+      <header className="resume-header">
+        <h1>K SURYA PRAKASH</h1>
+        <div className="resume-contact">
+          <span>✉️ ksurya86609@gmail.com</span>
+          <span>+91 8660922027</span>
+          <span>📍 Bengaluru, Karnataka 560085</span>
         </div>
-        <button className="dark-toggle" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? '🌙' : '☀️'}
-        </button>
-      </nav>
-      <main>
-        <section id="about" className="section about">
-          <div className="about-flex">
-            <img src={profileImg} alt="K Surya Prakash" className="profile-photo" />
-            <div className="about-main">
-              <h1>K SURYA PRAKASH</h1>
-              <p className="subtitle">Enthusiastic BE student in Artificial Intelligence and Data Science</p>
-              <p>Passionate about software engineering, especially data analysis. Enjoys blending tech and creativity. Familiar with C++, Java, and Python, always looking to learn more and grow in both tech and creative spaces.</p>
-              <div className="contact-info">
-                <span>📞 +91 86609 22027</span>
-                <span>✉️ ksurya86609@gmail.com</span>
-                <span>📍 Bengaluru, Karnataka</span>
-              </div>
-            </div>
+        <div className="resume-links">
+          <a href="https://ksuryaprakashportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">ksuryaprakashportfolio.netlify.app/</a>
+          <a href="https://github.com/surya27092004" target="_blank" rel="noopener noreferrer">github.com/surya27092004</a>
+          <a href="https://linkedin.com/in/sp-suryaprakash" target="_blank" rel="noopener noreferrer">linkedin.com/in/sp-suryaprakash</a>
+        </div>
+      </header>
+      <section className="resume-summary">
+        <h2>SUMMARY</h2>
+        <p>I am K Surya Prakash, a final-year B.E. student specializing in Artificial Intelligence and Data Science at K.S. School of Engineering and Management, Bengaluru. I have a strong foundation in Python, SQL, and core AI/ML concepts, with hands-on experience from internships and certifications. I am a quick learner with strong communication, teamwork, and problem-solving skills, eager to contribute to impactful and innovative tech solutions.</p>
+      </section>
+      <section className="resume-education">
+        <h2>EDUCATION</h2>
+        <div>
+          <strong>Bachelor of Engineering in Artificial Intelligence and Data Science,</strong> <em>K S SCHOOL OF ENGINEERING AND MANAGEMENT</em> <span className="edu-period">2026 – 2026</span><br />
+          <span>CGPA: 8.50</span> <span>Bengaluru, Karnataka</span>
+        </div>
+        <div>
+          <strong>PUC in PCMC's,</strong> <em>SRI KRISHNA PU COLLEGE</em> <span className="edu-period">2022 – 2022</span><br />
+          <span>Percentage: 74</span> <span>Bengaluru, Karnataka</span>
+        </div>
+      </section>
+      <section className="resume-skills">
+        <h2>TECHNICAL SKILLS</h2>
+        <div className="skills-flex">
+          <div>
+            <strong>Languages</strong><br />
+            HTML, CSS, Python, MongoDB, SQL
           </div>
-        </section>
-        <section id="projects" className="section">
-          <h2>Projects</h2>
-          <div className="projects-list">
-            {projects.map((proj, idx) => (
-              <div className="project-card" key={idx}>
-                <h3>{proj.title}</h3>
-                <p><b>Role:</b> {proj.role} <span className="period">({proj.period})</span></p>
-                <p>{proj.description}</p>
-              </div>
-            ))}
+          <div>
+            <strong>Frameworks & Tools</strong><br />
+            Numpy, Pandas, OpenCV, Matplotlib, Git, PowerBI, Figma, UI/UX
           </div>
-        </section>
-        <section id="skills" className="section">
-          <h2>Skills & Certifications</h2>
-          <div className="skills-list">
-            <div>
-              <h4>Soft Skills</h4>
-              <ul>{skills.map((s, i) => <li key={i}>{s}</li>)}</ul>
-            </div>
-            <div>
-              <h4>Technical Skills</h4>
-              <ul>{techSkills.map((s, i) => <li key={i}>{s}</li>)}</ul>
-            </div>
-            <div>
-              <h4>Languages</h4>
-              <ul>{languages.map((l, i) => <li key={i}>{l}</li>)}</ul>
-            </div>
-          </div>
-        </section>
-        <section id="certifications" className="section">
-          <h2>Certifications</h2>
-          <div className="certifications-list">
-            {certifications.map((cert, idx) => (
-              <div className="cert-card" key={idx}>
-                <h3>{cert.title}</h3>
-                <p>{cert.description}</p>
-                {cert.link && (
-                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-link">View Certificate</a>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-        <section id="education" className="section">
-          <h2>Education</h2>
-          <div className="education-list">
-            {education.map((edu, idx) => (
-              <div className="edu-card" key={idx}>
-                <h3>{edu.school}</h3>
-                <p>{edu.degree}</p>
-                <p className="period">{edu.period}{edu.details ? ` | ${edu.details}` : ''}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        <section id="contact" className="section">
-          <h2>Contact</h2>
-          <p>Feel free to reach out for collaboration or just a friendly hello!</p>
-          <ul className="contact-list">
-            <li>📞 +91 86609 22027</li>
-            <li>✉️ <a href="mailto:ksurya86609@gmail.com">ksurya86609@gmail.com</a></li>
+        </div>
+      </section>
+      <section className="resume-soft-skills">
+        <h2>SOFT SKILLS</h2>
+        <div className="soft-skills-list">
+          Project Management • Public Relations • Teamwork • Time Management • Effective Communication • Critical Thinking • Adaptability
+        </div>
+      </section>
+      <section className="resume-experience">
+        <h2>EXPERIENCE</h2>
+        <div>
+          <strong>Data Science Intern, Pinnacle Labs</strong> <span className="exp-period">07/2025 – 08/2025</span> <span>Bengaluru, India</span>
+          <ul>
+            <li>Engineered chatbot and fake news detection utilizing Python and datasets.</li>
           </ul>
-        </section>
-      </main>
-      <footer>
-        <p>© {new Date().getFullYear()} K Surya Prakash. All rights reserved.</p>
-      </footer>
+        </div>
+      </section>
+      <section className="resume-projects">
+        <h2>PROJECTS</h2>
+        <div>
+          <strong>ADAS and Pothole Detection</strong> <span className="proj-period">02/2025 – Present</span>
+          <ul>
+            <li>An ongoing project focused on improving road safety through technology. AI-based detection system for potholes and driver assistance using real-time image analysis.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>ARTS - Aegis Rail Track Security</strong> <span className="proj-period">07/2024 – 12/2024</span>
+          <ul>
+            <li>A mini project designed to improve railway safety and monitoring. Conceptualized a system for monitoring rail tracks using sensor input and alert mechanisms.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>LLM Corrector</strong> <span className="proj-period">2024 – 2025</span>
+          <ul>
+            <li>A project aimed at enhancing user interaction with AI models. Developed a tool to refine and correct user prompts using language model techniques and NLP concepts.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Chat Bot</strong> <span className="proj-period">07/2025 – 08/2025</span>
+          <ul>
+            <li>Created a conversational agent with a focus on user experience. Developed a chatbot for basic interactions with emphasis on natural flow and response accuracy.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Fake News Detection</strong> <span className="proj-period">06/2025 – 07/2025</span>
+          <ul>
+            <li>A complete machine learning web application for detecting fake news using Python, Streamlit, and scikit-learn. The application uses natural language processing techniques to classify news articles and headlines as either Real or Fake.</li>
+          </ul>
+        </div>
+      </section>
+      <section className="resume-certifications">
+        <h2>CERTIFICATIONS</h2>
+        <div className="cert-columns">
+          <ul>
+            <li>Python Programming (Part 1, 2 & Foundation), Owningspan (Infosys SpringBoard)</li>
+            <li>Web Development with HTML, CSS, JS, DataFlair</li>
+            <li>Introduction to Python, DataFlair</li>
+            <li>Introduction to Generative AI and Generative AI Studio, Google Cloud</li>
+            <li>Data Analytics Course, Google Cloud</li>
+          </ul>
+          <ul>
+            <li>Python Foundation Certification, Owningspan (Infosys SpringBoard)</li>
+            <li>Introduction to Pandas, Numpy, Matplotlib & OpenCV, DataFlair</li>
+            <li>Introduction to SQL, DataFlair</li>
+            <li>Python Data Analytics, Mevi Technologies</li>
+          </ul>
+          <ul>
+            <li>Applied Artificial Intelligence: Practical Implementations, TechSaksham / Edunet Foundation</li>
+            <li>Introduction to Machine Learning, DataFlair</li>
+            <li>Introduction to DSA, DataFlair</li>
+            <li>Prompt Design in Vertex AI, Google Cloud</li>
+          </ul>
+        </div>
+      </section>
+      <section className="resume-achievements">
+        <h2>ACHIEVEMENTS</h2>
+        <div>
+          <strong>Regional Expo:</strong>
+          <ul>
+            <li>Presented a LLM Corrector project at Regional Hub Expo at Hassan sponsored by TechSaksham/EduNet Foundation</li>
+          </ul>
+        </div>
+        <div>
+          <strong>SAP-HACKATHON</strong>
+          <ul>
+            <li>Participated in college level SAP-HACAKTHON</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 }
