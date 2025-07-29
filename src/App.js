@@ -90,7 +90,7 @@ const certifications = [
     link: '',
   },
   {
-    title: 'Python (INGOSYS PART-1)',
+    title: 'Python (INFOSYS PART-1)',
     description: 'Foundational Python programming skills, INGOSYS curriculum.',
     link: '',
   },
