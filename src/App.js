@@ -17,7 +17,7 @@ function App() {
     resume: '/K-SURYA-PRAKASH-Resume.pdf',
   };
 
-  const summary = A final-year B.E. student specializing in Artificial Intelligence and Data Science at K.S. School of Engineering and Management, Bengaluru. Strong foundation in Python, SQL, and core AI/ML concepts. Hands-on experience from internships and certifications. Quick learner with strong communication, teamwork, and problem-solving skills. Eager to contribute to impactful and innovative tech solutions.;
+  const summary = "A final-year B.E. student specializing in Artificial Intelligence and Data Science at K.S. School of Engineering and Management, Bengaluru. Strong foundation in Python, SQL, and core AI/ML concepts. Hands-on experience from internships and certifications. Quick learner with strong communication, teamwork, and problem-solving skills. Eager to contribute to impactful and innovative tech solutions.";
 
   const education = [
     {
