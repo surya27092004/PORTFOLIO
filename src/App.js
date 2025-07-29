@@ -29,8 +29,7 @@ const skills = [
 ];
 
 const techSkills = [
-  'Python', 'JavaScript', 'HTML', 'CSS', 'Flask', 'Git', 'Prophet', 'Scikit-learn', 'Jupyter Notebook',
-  'Clustering', 'Recommendation Systems', 'Forecasting', 'Anomaly Detection',
+  'Python', 'HTML', 'CSS','MongoDB','SQL','Numpy','Pandas','MatplotLib','Git','PowerBI','Figma','UI/UX','OpenCV',
 ];
 
 const certifications = [
@@ -90,7 +89,7 @@ const certifications = [
     link: '',
   },
   {
-    title: 'Python (INFOSYS PART-1)',
+    title: 'Python (INGOSYS PART-1)',
     description: 'Foundational Python programming skills, INGOSYS curriculum.',
     link: '',
   },
