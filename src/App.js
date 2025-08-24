@@ -178,7 +178,7 @@ function App() {
             <div className="project-card">
               <div className="project-header">
                 <h3>ADAS and Pothole Detection</h3>
-                <a href="#" className="github-link" aria-label="View on GitHub">
+                <a href="https://github.com/surya27092004" target="_blank" rel="noopener noreferrer" className="github-link" aria-label="View on GitHub">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
@@ -188,7 +188,7 @@ function App() {
             <div className="project-card">
               <div className="project-header">
                 <h3>ARTS - Aegis Rail Track Security</h3>
-                <a href="#" className="github-link" aria-label="View on GitHub">
+                <a href="https://github.com/surya27092004" target="_blank" rel="noopener noreferrer" className="github-link" aria-label="View on GitHub">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
@@ -198,7 +198,7 @@ function App() {
             <div className="project-card">
               <div className="project-header">
                 <h3>LLM Corrector</h3>
-                <a href="#" className="github-link" aria-label="View on GitHub">
+                <a href="https://github.com/surya27092004" target="_blank" rel="noopener noreferrer" className="github-link" aria-label="View on GitHub">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
@@ -208,7 +208,7 @@ function App() {
             <div className="project-card">
               <div className="project-header">
                 <h3>Fake News Detection</h3>
-                <a href="#" className="github-link" aria-label="View on GitHub">
+                <a href="https://github.com/surya27092004" target="_blank" rel="noopener noreferrer" className="github-link" aria-label="View on GitHub">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
